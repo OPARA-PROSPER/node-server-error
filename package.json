@@ -1,14 +1,16 @@
 {
-  "name": "http-headers",
+  "name": "node-server-error",
   "version": "1.0.0",
-  "description": "",
-  "main": "http.js",
+  "description": "Helping repo users understand the Node Error [ERR_HTTP_HEADERS_SENT] cannot set headers after they are sent",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fail": "nodemon error.js",
+    "pass": "nodemon pass.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Prosper opara",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1"
   }
 }
