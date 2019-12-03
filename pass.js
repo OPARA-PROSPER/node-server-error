@@ -5,7 +5,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.post('/test', (req, res) => {
-  if (!req.body) {
+  if (!req.body.name) {
     return res.status(400).json({
       status: 'error',
       error: 'req body cannot be empty',
